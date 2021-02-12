@@ -65,6 +65,14 @@ function hasCharsNumsCheck(dataToCheck) {
     return false;
 }
 
+function hasSkillAnswer(dataToCheck) {
+    let pattern = 10;
+    if (pattern.test(dataToCheck.field.value)) {
+        return true;
+    }
+    return false;
+}
+
 function errorsReset() {
     fieldsCheck.forEach(inputField => {
         inputField.error.innerText = ""
@@ -105,6 +113,7 @@ function inputChecker(e) {
     let parentFirstNameInput = document.getElementById('parentFirstName');
     let parentLastNameInput = document.getElementById('parentLastName');
     let parentPhoneNumberInput = document.getElementById('parentPhoneNumber');
+    let skillTestQuestionInput = document.getElementById('skillTestQuestion');
 
 
     let errors = 0;
@@ -112,7 +121,6 @@ function inputChecker(e) {
     if (firstNameInput.value == "") {
         errors = errors + 1;
         firstNameInput.style.borderBottom = "1px solid red";
-
     } else {
         firstNameInput.style.borderBottom = "1px solid green";
     }
@@ -120,55 +128,68 @@ function inputChecker(e) {
     if (lastNameInput.value == "") {
         errors = errors + 1;
         lastNameInput.style.borderBottom = "1px solid red";
-
     } else {
-        lastNameInput.style.borderBottom = "1px solid green";
+        lastNameInput.style.borderBottom = "1.5px solid green";
     }
+
     if (emailAddressInput.value == "") {
         errors = errors + 1;
-        emailAddressInput.style.borderBottom = "1px solid red";
+        emailAddressInput.style.borderBottom = "1.5px solid red";
     } else {
-        emailAddressInput.style.borderBottom = "1px solid green";
+        emailAddressInput.style.borderBottom = "1.5px solid green";
     }
+
     if (phoneNumberInput.value == "") {
         errors = errors + 1;
-        phoneNumberInput.style.borderBottom = "1px solid red";
+        phoneNumberInput.style.borderBottom = "1.5px solid red";
     } else {
-        phoneNumberInput.style.borderBottom = "1px solid green";
+        phoneNumberInput.style.borderBottom = "1.5px solid green";
     }
+
     if (addressInput.value == "") {
         errors = errors + 1;
-        addressInput.style.borderBottom = "1px solid red";
+        addressInput.style.borderBottom = "1.5px solid red";
     } else {
-        addressInput.style.borderBottom = "1px solid green";
+        addressInput.style.borderBottom = "1.5px solid green";
     }
 
     if (birthdayInput.value <= "") {
-        birthdayInput.style.borderBottom = "1px solid red";
+        errors = errors +1;
+        birthdayInput.style.borderBottom = "1.5px solid red";
     } else {
-        birthdayInput.style.borderBottom = "1px solid green";
+        birthdayInput.style.borderBottom = "1.5px solid green";
     }
 
     if (parentFirstNameInput.value == "") {
-        parentFirstNameInput.style.borderBottom = "1px solid red";
+        errors = errors +1;
+        parentFirstNameInput.style.borderBottom = "1.5px solid red";
     } else {
-        parentLastNameInput.style.borderBottom = "1px solid green";
+        parentFirstNameInput.style.borderBottom = "1.5px solid green";
+    }
+
+    if (parentLastNameInput.value == "") {
+        errors = errors +1;
+        parentLastNameInput.style.borderBottom = "1.5px solid red";
+    } else {
+        parentLastNameInput.style.borderBottom = "1.5px solid green";
     }
 
     if (parentPhoneNumberInput.value == "") {
-        parentPhoneNumberInput.style.borderBottom = "1px solid red";
-
+        errors = errors +1;
+        parentPhoneNumberInput.style.borderBottom = "1.5px solid red";
     } else {
-        parentLastNameInput.style.borderBottom = "1px solid green";
+        parentPhoneNumberInput.style.borderBottom = "1.5px solid green";
+    }
+
+    if (skillTestQuestionInput.value == "") {
+        errors = errors +1;
+        skillTestQuestionInput.style.borderBottom = "1.5px solid red";
+    } else {
+        skillTestQuestionInput.style.borderBottom = "1.5px solid green";
     }
 
 
 }
-
-
-
-
-
 
 function initForm() {
     let firstName = document.querySelector('#firstName');
@@ -248,7 +269,7 @@ function initForm() {
         },
         {
             field: skillTestQuestion,
-            checker: hasNumsCheck,
+            checker: hasSkillAnswer,
             error: skillTestQuestionError,
             msg: "Please answer the question correctly."
         }
