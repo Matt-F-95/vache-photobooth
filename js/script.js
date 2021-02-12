@@ -66,7 +66,7 @@ function hasCharsNumsCheck(dataToCheck) {
 }
 
 function hasSkillAnswer(dataToCheck) {
-    let pattern = 10;
+    let pattern = /^(?:75)$/;
     if (pattern.test(dataToCheck.field.value)) {
         return true;
     }
@@ -181,11 +181,11 @@ function inputChecker(e) {
         parentPhoneNumberInput.style.borderBottom = "1.5px solid green";
     }
 
-    if (skillTestQuestionInput.value == "") {
+    if (skillTestQuestionInput.value == 75) {
+        skillTestQuestionInput.style.borderBottom = "1.5px solid green";
+    } else {
         errors = errors +1;
         skillTestQuestionInput.style.borderBottom = "1.5px solid red";
-    } else {
-        skillTestQuestionInput.style.borderBottom = "1.5px solid green";
     }
 
 
