@@ -1,0 +1,28 @@
+{
+  "name": "milk-photobooth",
+  "version": "1.0.0",
+  "description": "A milk photobooth collaborative project for 4101.",
+  "main": "index.js",
+  "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matt-F-95/milk-photobooth.git"
+  },
+  "author": "Matt Felton",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "bugs": {
+    "url": "https://github.com/Matt-F-95/milk-photobooth/issues"
+  },
+  "homepage": "https://github.com/Matt-F-95/milk-photobooth#readme",
+  "dependencies": {
+    "node": "^15.4.0",
+    "tailwindcss": "^2.0.2"
+  },
+  "keywords": []
+}

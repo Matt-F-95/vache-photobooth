@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vache - Milk Photobooth Group Project 4101.">
+    <title>Vache - Milk Photobooth</title>
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="container-fluid bg-gray-800">
+        <div class="container mx-auto bg-gray-800 p-5">
+            <nav class="flex-row md:justify-between">
+                <div class="flex flex-row justify-between">
+                    <a class="mb-2" href="#"><img src="img/logo.png" alt="Vache - Milk Photobooth"></a>
+
+                    <p id="hamburgerbtn" class="md:hidden">
+                        <i class="text-white text-2xl fas fa-bars"></i>
+                    </p>
+                </div>
+
+                <ul class="hidden md:flex md:flex-row text-white" id="mobileMenu">
+                    <li class="pr-5"><a href="#">Contest</a></li>
+                    <li class="pr-5"><a href="#">Product</a></li>
+                    <li class="pr-5"><a href="#">Contact</a></li>
+                    <li class="pr-5"><a href="#">Legal</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <h1 class="text-center text-4xl mt-5 mb-10">Register for Contest</h1>
+
+
+
+
+   
+    <div class="flex justify-center">
+
+
+        <div class="imageContainer md:flex-initial lg:flex-initial">
+            <div class="wrapper">
+                <div class="centered">
+                    <h2 class="text-6xl text-left">CHANCE TO WIN FREE DAIRY FOR A YEAR</h2>
+                </div>
+            </div>
+        </div>
+        <div class="flex-initial">
+            <form class="milkForm" action="#">
+                
+                <legend class="text-2xl mb-2 mt-2">Contestant Information</legend>
+                <fieldset>
+                    <div class="-mx-3 md:flex mb-6">
+                        <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label for="firstName" class="uppercase tracking-wide text-black text-xs font-bold mb-2">First Name:</label><input  class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3"
+                            id="firstName" name="firstName" type="text" placeholder="First Name">
+                        <p class="text-red-600" id="firstNameError"></p>
+                    </div>
+                    <div class="md:w-1/2 px-3">
+                        <label for="lastName" class="uppercase tracking-wide text-black text-xs font-bold mb-2">Last Name:</label><input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3"
+                            id="lastName" name="lastName" type="text" placeholder="Last Name">
+                        <p class="text-red-600" id="lastNameError"></p>
+                    </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="-mx-3 md:flex mb-6">
+                        <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label for="emailAddress" class="uppercase tracking-wide text-black text-xs font-bold mb-2">Email Address:</label><input
+                        class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3" id="emailAddress" name="emailAddress" type="text"
+                            placeholder="Email Address">
+                        <p class="text-red-600" id="emailAddressError"></p>
+                    </div>
+
+                    <div class="md:w-1/2 px-3">
+                        <label for="phoneNumber" class="uppercase tracking-wide text-black text-xs font-bold mb-2">Phone Number:</label><input  class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3"
+                            id="phoneNumber" name="phoneNumber" type="text" placeholder="Phone number">
+                        <p class="text-red-600" id="phoneNumberError"></p>
+                    </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="-mx-3 md:flex mb-6">
+                        <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label for="birthday" class="uppercase tracking-wide text-black text-xs font-bold mb-2">Date Of Birth:</label><input type="date"  class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3"
+                            id="dateOfBirth" name="dateOfBirth" type="text">
+                        <p class="text-red-600" id="dobError"></p>
+                    </div>
+
+                    <div class="md:w-1/2 px-3">
+                        <label for="address" class="uppercase tracking-wide text-black text-xs font-bold mb-2">Address:</label><input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3"
+                            id="address" name="address" type="text" placeholder="Address">
+                        <p class="text-red-600" id="addressError"></p>
+                    </div>
+                    </div>
+                </fieldset>
+                <legend class="text-2xl mb-2 mt-2">Guardians Information <small class="text-sm">(Under age 18)</small></legend>
+                <fieldset>
+                    <div class="-mx-3 md:flex mb-6">
+                        <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label for="parentFirstName" class="uppercase tracking-wide text-black text-xs font-bold mb-2">First Name:</label><input
+                        class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3" id="parentFirstName" name="parentFirstName"
+                            type="text" placeholder="Guardians First Name">
+                        <p class="text-red-600" id="parentFirstNameError"></p>
+                    </div>
+                    <div class="md:w-1/2 px-3">
+                   
+                        <label for="parentLastName" class="uppercase tracking-wide text-black text-xs font-bold mb-2">Last Name:</label><input  class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3"
+                            id="parentLastName" name="parentLastName" type="text" placeholder="Guardians Last Name">
+                        <p class="text-red-600" id="parentLastNameError"></p>
+                    </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="flex flex-col mb-4">
+                        <label for="parentPhoneNumber" class="uppercase tracking-wide text-black text-xs font-bold mb-2">Phone Number:</label><input
+                        class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3" id="parentPhoneNumber" name="parentPhoneNumber"
+                            type="text" placeholder="Guardians Phone number">
+                        <p class="text-red-600" id="parentPhoneNumberError"></p>
+                    </div>
+                </fieldset>
+                <legend>Skill Testing Question</legend>
+                <fieldset>
+                    <div class="flex flex-col mb-4">
+                        <label for="skillTestQuestion" class="uppercase tracking-wide text-black text-xs font-bold mb-2">55 + 40 / 2 equals:</label><input
+                        class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3" id="skillTestQuestion" name="parentPhoneNumber"
+                            type="text" placeholder="Your answer">
+                        <p class="text-red-600" id="skillTestQuestionError"></p>
+                    </div>
+                    <div class="mt-2">
+                        <div>
+                            <label class="inline-flex items-center">
+                                <input type="checkbox" class="form-checkbox" required>
+                                <span class="ml-2">I agree to the <a href="#">rules and regulations.</a></span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="inline-flex items-center">
+                                <input id="checkBox" type="checkbox" class="form-checkbox" required>
+                                <span class="ml-2">I agree to the <a href="#">terms and conditions</a> and <a
+                                        href="#">privacy policy.</a></span>
+                            </label>
+                            <p id="checkBoxError"></p>
+                        </div>
+                        <div>
+                            <label class="inline-flex items-center">
+                                <input type="checkbox" class="form-checkbox" required>
+                                <span class="ml-2">I consent to receiving emails regarding our products,
+                                    newsletter, and up-coming promotions.</span>
+                            </label>
+                            <h2 class="text-xl pt-5 text-bold">Disclaimer:</h2>
+                            <p class="italic text-sm">Winners will be determined by random draw, but may have
+                                their enteries removed for any reason by the judges.</p>
+                        </div>
+                    </div>
+                </fieldset>
+                <input class="bg-green-400 p-5 mt-2 mb-5" type="submit" value="Submit" id="formSubmit">
+            </form>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-gray-800 text-white p-8">
+        <div class="sm:flex mb-4">
+            <div class="sm:w-1/2 sm:mt-0 mt-8 h-auto">
+                <div class="text-red-light mb-2"><img src="img/logo.png" alt="Vache Milk Photobooth Logo"></div>
+                <p class="text-grey-darker text-sm leading-normal w-3/4">We strive to help enhance quality of life for
+                    everyone by promoting a healthy lifestyle and providing quality dairy products for many generations
+                    to come. </p>
+                <div class="mt-4 flex">
+                    <i class="mr-5 fab fa-instagram"></i>
+                    <i class="mr-5 fab fa-facebook"></i>
+                    <i class="mr-5 fab fa-twitter"></i>
+                    <i class="mr-5 fab fa-pinterest"></i>
+                </div>
+            </div>
+            <div class="sm:w-1/4 h-auto">
+                <div class="text-lg mb-2">Quick Links</div>
+                <ul class="list-reset leading-normal">
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="sm:w-1/4 h-auto sm:mt-0 mt-8">
+                <div class="text-lg mb-2">Contact Us</div>
+                <ul class="list-reset leading-normal">
+                    <li class="mb-3"><i class="fas fa-envelope pr-2"></i><a
+                            href="mailto:info@vache.ca">info@vache.ca</a></li>
+                    <li class="mb-3"><i class="fas fa-phone-alt pr-2"></i><a href="tel:14163831463">+1 (416) - 383 -
+                            1463</a></li>
+                    <li class="mb-3"><i class="fas fa-map-marker-alt pr-3"></i><a
+                            href="mailto:info@vache.ca">info@vache.ca</a></li>
+                </ul>
+
+
+
+            </div>
+            <div class="sm:w-1/4 h-auto sm:mt-0 mt-8">
+                <div class="text-lg mb-2">Sign up for updates</div>
+                <input type="text" class="bg-gray-900 p-2 text-white" placeholder="Email Address">
+                <button class="bg-red-800 p-2 mt-3">Subscribe</button>
+
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/374c297ca1.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
