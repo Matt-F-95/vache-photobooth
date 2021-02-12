@@ -50,6 +50,14 @@
     display: block;
 }    
 
+#mobileMenu {
+    padding: 20px;
+    line-height: 1.75em;
+    text-align: center;
+    font-size: 1.45em;
+    
+}
+
 @media only screen and (max-width: 1045px) {
 	.imageContainer {
 		display: none;
