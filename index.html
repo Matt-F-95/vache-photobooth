@@ -41,23 +41,23 @@
         <div class="imageContainer md:flex-initial lg:flex-initial">
             <div class="wrapper">
                 <div class="centered">
-                    <h2 class="text-6xl text-left">CHANCE TO WIN FREE DAIRY FOR A YEAR</h2>
+                    <h2 class="text-6xl text-left" id="randomBlurbs"></h2>
                 </div>
             </div>
         </div>
         <div class="flex-initial">
             <form class="milkForm" action="#">
                 
-                <legend class="text-2xl mb-2 mt-2">Contestant Information</legend>
+                <legend class="text-2xl mb-5 mt-2">Contestant Information</legend>
                 <fieldset>
                     <div class="-mx-3 md:flex mb-6">
                         <div class="md:w-1/2 px-3 mb-6 md:mb-0">
-                        <label for="firstName" class="uppercase tracking-wide text-black text-xs font-bold mb-2">First Name:</label><input  class="w-full hover:bg-gray-200 focus:bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3"
+                        <label for="firstName" class="uppercase tracking-wide text-black text-s font-bold mb-2">First Name:</label><input  class="w-full hover:bg-gray-200 focus:bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3"
                             id="firstName" name="firstName" type="text" placeholder="First Name">
                         <p class="text-red-600" id="firstNameError"></p>
                     </div>
                     <div class="md:w-1/2 px-3">
-                        <label for="lastName" class="uppercase tracking-wide text-black text-xs font-bold mb-2">Last Name:</label><input class="w-full hover:bg-gray-200 focus:bg-gray-200  text-black border border-gray-200 rounded py-3 px-4 mb-3"
+                        <label for="lastName" class="uppercase tracking-wide text-black text-s font-bold mb-2">Last Name:</label><input class="w-full hover:bg-gray-200 focus:bg-gray-200  text-black border border-gray-200 rounded py-3 px-4 mb-3"
                             id="lastName" name="lastName" type="text" placeholder="Last Name">
                         <p class="text-red-600" id="lastNameError"></p>
                     </div>
@@ -66,14 +66,14 @@
                 <fieldset>
                     <div class="-mx-3 md:flex mb-6">
                         <div class="md:w-1/2 px-3 mb-6 md:mb-0">
-                        <label for="emailAddress" class="uppercase tracking-wide text-black text-xs font-bold mb-2">Email Address:</label><input
+                        <label for="emailAddress" class="uppercase tracking-wide text-black text-s font-bold mb-2">Email Address:</label><input
                         class="w-full hover:bg-gray-200 focus:bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3" id="emailAddress" name="emailAddress" type="text"
                             placeholder="Email Address">
                         <p class="text-red-600" id="emailAddressError"></p>
                     </div>
 
                     <div class="md:w-1/2 px-3">
-                        <label for="phoneNumber" class="uppercase tracking-wide text-black text-xs font-bold mb-2">Phone Number:</label><input  class="w-full hover:bg-gray-200 focus:bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3"
+                        <label for="phoneNumber" class="uppercase tracking-wide text-black text-s font-bold mb-2">Phone Number:</label><input  class="w-full hover:bg-gray-200 focus:bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3"
                             id="phoneNumber" name="phoneNumber" type="text" placeholder="Phone number">
                         <p class="text-red-600" id="phoneNumberError"></p>
                     </div>
@@ -82,30 +82,30 @@
                 <fieldset>
                     <div class="-mx-3 md:flex mb-6">
                         <div class="md:w-1/2 px-3 mb-6 md:mb-0">
-                        <label for="birthday" class="uppercase tracking-wide text-black text-xs font-bold mb-2">Date Of Birth:</label><input type="date"  class="w-full hover:bg-gray-200 focus:bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3"
+                        <label for="birthday" class="uppercase tracking-wide text-black text-s font-bold mb-2">Date Of Birth:</label><input type="date"  class="w-full hover:bg-gray-200 focus:bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3"
                             id="dateOfBirth" name="dateOfBirth" type="text">
                         <p class="text-red-600" id="dobError"></p>
                     </div>
 
                     <div class="md:w-1/2 px-3">
-                        <label for="address" class="uppercase tracking-wide text-black text-xs font-bold mb-2">Address:</label><input class="w-full hover:bg-gray-200 focus:bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3"
+                        <label for="address" class="uppercase tracking-wide text-black text-s font-bold mb-2">Address:</label><input class="w-full hover:bg-gray-200 focus:bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3"
                             id="address" name="address" type="text" placeholder="Address">
                         <p class="text-red-600" id="addressError"></p>
                     </div>
                     </div>
                 </fieldset>
-                <legend class="text-2xl mb-2 mt-2">Guardians Information <small class="text-sm">(Under age 18)</small></legend>
+                <legend class="text-2xl mb-5 mt-2">Guardians Information <small class="text-sm">(Under age 18)</small></legend>
                 <fieldset>
                     <div class="-mx-3 md:flex mb-6">
                         <div class="md:w-1/2 px-3 mb-6 md:mb-0">
-                        <label for="parentFirstName" class="uppercase tracking-wide text-black text-xs font-bold mb-2">First Name:</label><input
+                        <label for="parentFirstName" class="uppercase tracking-wide text-black text-s font-bold mb-2">First Name:</label><input
                         class="w-full hover:bg-gray-200 focus:bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3" id="parentFirstName" name="parentFirstName"
                             type="text" placeholder="Guardians First Name">
                         <p class="text-red-600" id="parentFirstNameError"></p>
                     </div>
                     <div class="md:w-1/2 px-3">
                    
-                        <label for="parentLastName" class="uppercase tracking-wide text-black text-xs font-bold mb-2">Last Name:</label><input  class="w-full hover:bg-gray-200 focus:bg-gray-200  text-black border border-gray-200 rounded py-3 px-4 mb-3"
+                        <label for="parentLastName" class="uppercase tracking-wide text-black text-s font-bold mb-2">Last Name:</label><input  class="w-full hover:bg-gray-200 focus:bg-gray-200  text-black border border-gray-200 rounded py-3 px-4 mb-3"
                             id="parentLastName" name="parentLastName" type="text" placeholder="Guardians Last Name">
                         <p class="text-red-600" id="parentLastNameError"></p>
                     </div>
@@ -113,16 +113,16 @@
                 </fieldset>
                 <fieldset>
                     <div class="flex flex-col mb-4">
-                        <label for="parentPhoneNumber" class="uppercase tracking-wide text-black text-xs font-bold mb-2">Phone Number:</label><input
+                        <label for="parentPhoneNumber" class="uppercase tracking-wide text-black text-s font-bold mb-2">Phone Number:</label><input
                         class="w-full hover:bg-gray-200 focus:bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3" id="parentPhoneNumber" name="parentPhoneNumber"
                             type="text" placeholder="Guardians Phone number">
                         <p class="text-red-600" id="parentPhoneNumberError"></p>
                     </div>
                 </fieldset>
-                <legend class="text-2xl mb-2 mt-2">Skill Testing Question</legend>
+                <legend class="text-2xl mb-5 mt-2">Skill Testing Question</legend>
                 <fieldset>
                     <div class="flex flex-col mb-4">
-                        <label for="skillTestQuestion" class="uppercase tracking-wide text-black text-xs font-bold mb-2">55 + 40 / 2 equals:</label><input
+                        <label for="skillTestQuestion" class="uppercase tracking-wide text-black text-s font-bold mb-2">55 + 40 / 2 equals:</label><input
                         class="w-full hover:bg-gray-200 focus:bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3" id="skillTestQuestion" name="parentPhoneNumber"
                             type="text" placeholder="Your answer">
                         <p class="text-red-600" id="skillTestQuestionError"></p>
@@ -156,8 +156,8 @@
                 </fieldset>
                 
                 <!-- <input class="bg-green-400 p-5 mt-2 mb-5" type="submit" value="Agree &amp; Submit" id="formSubmit"> -->
-                <button class="bg-green-600 text-white p-5 mt-2 mb-5 align-right" type="submit" value="submit" id="formSubmit">Agree &amp; Submit</button>
-                <button class="bg-gray-800 text-white p-5 mt-2 mb-5 align-right"><a href="index.html">Cancel</a></button>
+                <button class="rounded bg-green-600 text-white p-3 mt-2 mb-5 align-right" type="submit" value="submit" id="formSubmit">Agree &amp; Submit</button>
+                <button class="rounded bg-gray-800 text-white p-3 mt-2 mb-5 align-right"><a href="index.html">Cancel</a></button>
             </form>
         </div>
     </div>

@@ -100,6 +100,13 @@ function formChecker(e) {
 
 }
 
+(function randomizedBlurb() {
+    let blurbs = ['CHANCE TO WIN FREE DAIRY FOR A YEAR!', 'CHANCE TO WIN A TRIP TO JAMAICA FOR 3!', '25% ODDS OF WINNING A PRIZE!', 'CHANCE TO WIN SEASON TICKETS TO THE RAPTORS!', 'CHANCE TO WIN ENTRIES FOR OUR $25K RAFFLE'];
+    let randblurbs = Math.floor(Math.random() * blurbs.length);
+    document.getElementById('randomBlurbs').innerHTML = blurbs[randblurbs];
+})();
+
+
 
 
 function inputChecker(e) {
