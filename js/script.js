@@ -116,7 +116,7 @@ function formChecker(e) {
     } else {
         console.log('form submitted');
         topFunction();
-        document.getElementsByClassName('overlay')[0].style.opacity = '0.3';
+        blurBackground();
         pop();
     }
 
@@ -135,6 +135,10 @@ function topFunction() {
     document.body.scrollTop = 0; //safari
     document.documentElement.scrollTop = 0;
   }
+
+function blurBackground() {
+    document.getElementsByClassName('overlay')[0].style.opacity = '0.3';
+}
 
 
 
