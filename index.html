@@ -23,16 +23,16 @@
                 </div>
 
                 <ul class="hidden md:flex md:flex-row text-white" id="mobileMenu">
-                    <li class="pr-5"><a href="#">Contest</a></li>
-                    <li class="pr-5"><a href="#">Product</a></li>
-                    <li class="pr-5"><a href="#">Contact</a></li>
-                    <li class="pr-5"><a href="#">Legal</a></li>
+                    <li class="pr-5"><a class="hover:text-red-600" href="#">Contest</a></li>
+                    <li class="pr-5"><a class="hover:text-red-600" href="#">Product</a></li>
+                    <li class="pr-5"><a class="hover:text-red-600" href="#">Contact</a></li>
+                    <li class="pr-5"><a class="hover:text-red-600" href="#">Legal</a></li>
                 </ul>
             </nav>
         </div>
 
     </header>
-    <h1 class="text-center text-4xl mt-10 mb-10">Register for Contest</h1>
+    <h1 class="text-center font-bold text-4xl mt-20 mb-20">Register for Contest</h1>
     
     
     <div class="flex justify-center">
@@ -48,7 +48,7 @@
         <div class="flex-initial">
             <form class="milkForm" action="#">
                 
-                <legend class="text-2xl mb-5 mt-2">Contestant Information</legend>
+                <legend class="text-2xl mb-5 mt-2 font-bold">Contestant Information</legend>
                 <fieldset>
                     <div class="-mx-3 md:flex mb-6">
                         <div class="md:w-1/2 px-3 mb-6 md:mb-0">
@@ -94,7 +94,7 @@
                     </div>
                     </div>
                 </fieldset>
-                <legend class="text-2xl mb-5 mt-2">Guardians Information <small class="text-sm">(Under age 18)</small></legend>
+                <legend class="text-2xl font-bold mb-5 mt-2">Guardians Information <small class="text-sm">(Under age 18)</small></legend>
                 <fieldset>
                     <div class="-mx-3 md:flex mb-6">
                         <div class="md:w-1/2 px-3 mb-6 md:mb-0">
@@ -119,7 +119,7 @@
                         <p class="text-red-600" id="parentPhoneNumberError"></p>
                     </div>
                 </fieldset>
-                <legend class="text-2xl mb-5 mt-2">Skill Testing Question</legend>
+                <legend class="text-2xl font-bold mb-5 mt-2">Skill Testing Question</legend>
                 <fieldset>
                     <div class="flex flex-col mb-4">
                         <label for="skillTestQuestion" class="uppercase tracking-wide text-black text-s font-bold mb-2">55 + 40 / 2 equals:</label><input
@@ -148,8 +148,8 @@
                                 <span class="ml-2">I consent to receiving emails regarding our products,
                                     newsletter, and up-coming promotions.</span>
                             </label>
-                            <h2 class="text-xl pt-5 text-bold">Disclaimer:</h2>
-                            <p class="italic text-sm">Winners will be determined by random draw, but may have
+                            <h2 class="text-xl pt-5 font-bold">Disclaimer:</h2>
+                            <p class="italic text-sm mb-2">Winners will be determined by random draw, but may have
                                 their enteries removed for any reason by the judges.</p>
                         </div>
                     </div>
@@ -162,52 +162,52 @@
         </div>
     </div>
    
-    <div class="container-fluid bg-gray-800 text-white p-8">
+    <div class="container-fluid bg-gray-800">
+    <div class="container bg-gray-800 text-white p-8">
         <div class="sm:flex mb-4">
             <div class="sm:w-1/2 sm:mt-0 mt-8 h-auto">
-                <div class="text-red-light mb-2"><img src="img/logo.png" alt="Vache Milk Photobooth Logo"></div>
+                <div class="text-red-light mb-3"><img src="img/logo.png" alt="Vache Milk Photobooth Logo"></div>
                 <p class="text-grey-darker text-sm leading-normal w-3/4">We strive to help enhance quality of life for
                     everyone by promoting a healthy lifestyle and providing quality dairy products for many generations
                     to come. </p>
                 <div class="mt-4 flex">
-                    <i class="mr-5 fab fa-instagram"></i>
-                    <i class="mr-5 fab fa-facebook"></i>
-                    <i class="mr-5 fab fa-twitter"></i>
-                    <i class="mr-5 fab fa-pinterest"></i>
+                    <i class="mr-5 fab fa-instagram hover:text-red-600"></i>
+                    <i class="mr-5 fab fa-facebook hover:text-red-600"></i>
+                    <i class="mr-5 fab fa-twitter hover:text-red-600"></i>
+                    <i class="mr-5 fab fa-pinterest hover:text-red-600"></i>
                 </div>
             </div>
             <div class="sm:w-1/4 h-auto">
-                <div class="text-lg mb-2">Quick Links</div>
+                <div class="text-lg mb-2 font-bold quickLinks">Quick Links</div>
                 <ul class="list-reset leading-normal">
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Legal</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li class="mb-3"><a class="hover:text-red-600" href="#">Products</a></li>
+                    <li class="mb-3"><a class="hover:text-red-600" href="#">About Us</a></li>
+                    <li class="mb-3"><a class="hover:text-red-600" href="#">Legal</a></li>
+                    <li class="mb-3"><a class="hover:text-red-600" href="#">Contact Us</a></li>
                 </ul>
             </div>
             <div class="sm:w-1/4 h-auto sm:mt-0 mt-8">
-                <div class="text-lg mb-2">Contact Us</div>
+                <div class="text-lg mb-2 font-bold">Contact Us</div>
                 <ul class="list-reset leading-normal">
-                    <li class="mb-3"><i class="fas fa-envelope pr-2"></i><a
+                    <li class="mb-3"><i class="fas fa-envelope pr-2"></i><a class="hover:text-red-600"
                             href="mailto:info@vache.ca">info@vache.ca</a></li>
-                    <li class="mb-3"><i class="fas fa-phone-alt pr-2"></i><a href="tel:14163831463">+1 (416) - 383 -
-                            1463</a></li>
-                    <li class="mb-3"><i class="fas fa-map-marker-alt pr-3"></i><a
-                            href="mailto:info@vache.ca">info@vache.ca</a></li>
+                    <li class="mb-3"><i class="fas fa-phone-alt pr-2"></i><a class="hover:text-red-600" href="tel:14163831463">+1 (416)-383-1463</a></li>
+                    <li class="mb-3"><i class="fas fa-map-marker-alt pr-3"></i><a class="hover:text-red-600"
+                            href="mailto:info@vache.ca">603 Richmond Hwy,<br>Toronto, ON, Canada</a></li>
                 </ul>
 
 
 
             </div>
             <div class="sm:w-1/4 h-auto sm:mt-0 mt-8">
-                <div class="text-lg mb-2">Sign up for updates</div>
-                <input type="text" class="bg-gray-900 p-2 text-white" placeholder="Email Address">
-                <button class="bg-red-800 p-2 mt-3">Subscribe</button>
+                <div class="text-lg mb-3 font-bold">Sign up for updates</div>
+                <input type="text" class="bg-gray-900 p-2 text-white rounded" placeholder="Email Address">
+                <button class="bg-red-800 p-2 mt-3 rounded">Subscribe</button>
 
+                <!-- modal -->
                 <div id="box">
-        
                     <h1 class="text-black text-3xl mt-3">Thank you, Good Luck!</h1>
-                    <p class="text-black text-sm mt-5 mb-3">We have sent you a confirmation message to your email. We wish you the best of luck and look forward to receiving your entries!</p>
+                    <p class="text-black text-sm mt-5 mb-3 break-words">We have sent you a confirmation message to your email. <br> We wish you the best of luck and look forward to reviewing your entries!</p>
                     <a href="index.html" class="close hover:bg-gray-600 mb-3">Continue</a><br>
                     <small class="text-xs text-black">By providing your email address, you agree to our <a class="underline" href="privacy-policy.html">Privacy Policy</a> and <a class="underline" href="terms-of-service.html">Terms of Service.</a></small>
                   </div>
@@ -216,6 +216,7 @@
 
 
         </div>
+    </div>
     </div>
 
     <script src="https://kit.fontawesome.com/374c297ca1.js" crossorigin="anonymous"></script>

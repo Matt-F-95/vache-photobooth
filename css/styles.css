@@ -16,10 +16,10 @@
 
 .imageContainer {
     background: #252525;
-    background-image: url(../img/cow-field-image.jpg);
+    background-image: url('https://source.unsplash.com/featured/?milk');
     background-position: center center;
     width: 400px;
-    height: 700px;
+    height: 100vh;
     padding: 0px;
     margin-right: 50px;
     margin-left: 50px;
@@ -117,5 +117,13 @@
     .milkForm {
         padding-left: 2em;
         padding-right: 2em;
+    }
+   
+}
+
+@media only screen and (max-width: 600px) {
+  
+    .quickLinks {
+        margin-top: 2em;
     }
 }

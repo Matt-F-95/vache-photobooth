@@ -110,13 +110,10 @@ function formChecker(e) {
 
     if (errorsDetected > 0) {
         console.log('fix your errors');
-        // pop();
     } else {
         console.log('form submitted');
-        
+        topFunction();
         pop();
-        // document.getElementById("box").style.display = "block";
-
     }
 
 
@@ -124,13 +121,16 @@ function formChecker(e) {
 }
 
 (function randomizedBlurb() {
-    let blurbs = ['CHANCE TO WIN FREE DAIRY FOR A YEAR!', 'CHANCE TO WIN A TRIP TO JAMAICA FOR 3!', '25% ODDS OF WINNING A PRIZE!', 'CHANCE TO WIN SEASON TICKETS TO THE RAPTORS!', 'CHANCE TO WIN ENTRIES FOR OUR $25K RAFFLE'];
+    let blurbs = ['CHANCE TO WIN FREE DAIRY FOR A YEAR!', 'CHANCE TO WIN A TRIP TO JAMAICA FOR 3!', '25% CHANCE OF WINNING A PRIZE!', 'CHANCE TO WIN SEASON TICKETS TO THE RAPTORS!', 'CHANCE TO WIN ENTRIES FOR OUR $25K RAFFLE'];
     let randblurbs = Math.floor(Math.random() * blurbs.length);
     document.getElementById('randomBlurbs').innerHTML = blurbs[randblurbs];
 })();
 
 
-
+function topFunction() {
+    document.body.scrollTop = 0; //safari
+    document.documentElement.scrollTop = 0;
+  }
 
 
 
@@ -152,14 +152,14 @@ function inputChecker(e) {
 
     if (firstNameInput.value == "") {
         errors = errors + 1;
-        firstNameInput.style.borderBottom = "1px solid red";
+        firstNameInput.style.borderBottom = "1.5px solid red";
     } else {
-        firstNameInput.style.borderBottom = "1px solid green";
+        firstNameInput.style.borderBottom = "1.5px solid green";
     }
 
     if (lastNameInput.value == "") {
         errors = errors + 1;
-        lastNameInput.style.borderBottom = "1px solid red";
+        lastNameInput.style.borderBottom = "1.5px solid red";
     } else {
         lastNameInput.style.borderBottom = "1.5px solid green";
     }
