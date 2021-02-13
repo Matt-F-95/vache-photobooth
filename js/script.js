@@ -140,6 +140,27 @@ function blurBackground() {
     document.getElementsByClassName('overlay')[0].style.opacity = '0.3';
 }
 
+function boxChecker() {
+    // Get the checkbox
+    let checkBox = document.getElementById("checkOne");
+    let checkBoxTwo = document.getElementById("checkTwo");
+    // Get the output text
+    let checkErrorMessage = document.getElementById("text");
+    let checkErrorMessageTwo = document.getElementById("textTwo");
+  
+    // If the checkbox is checked, display the output text
+    if (checkBox.checked == false){
+      checkErrorMessage.style.display = "block";
+    } else {
+      checkErrorMessage.style.display = "none";
+    }
+    if (checkBoxTwo.checked == false){
+      checkErrorMessageTwo.style.display = "block";
+    } else {
+      checkErrorMessageTwo.style.display = "none";
+    }
+  }
+
 
 
 function inputChecker(e) {
@@ -154,6 +175,7 @@ function inputChecker(e) {
     let parentLastNameInput = document.getElementById('parentLastName');
     let parentPhoneNumberInput = document.getElementById('parentPhoneNumber');
     let skillTestQuestionInput = document.getElementById('skillTestQuestion');
+
 
 
     let errors = 0;
@@ -227,6 +249,8 @@ function inputChecker(e) {
         errors = errors + 1;
         skillTestQuestionInput.style.borderBottom = "1.5px solid red";
     }
+
+   
 
 
 }
@@ -317,6 +341,7 @@ function initForm() {
     let formSubmit = document.querySelector('#formSubmit');
     formSubmit.addEventListener('click', formChecker);
     formSubmit.addEventListener('click', inputChecker);
+    formSubmit.addEventListener('click', boxChecker);
 }
 // 10 fields
 document.addEventListener("DOMContentLoaded", function () {

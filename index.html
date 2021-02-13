@@ -16,18 +16,16 @@
             <nav class="flex-row md:justify-between">
                 <div class="flex flex-row justify-between">
                     <a class="mb-2" href="#"><img src="img/logo.png" alt="Vache - Milk Photobooth"></a>
-
+                    <ul class="hidden md:flex md:flex-row text-white" id="mobileMenu">
+                        <li class="pr-5"><a class="hover:text-red-600" href="#">Contest</a></li>
+                        <li class="pr-5"><a class="hover:text-red-600" href="#">Product</a></li>
+                        <li class="pr-5"><a class="hover:text-red-600" href="#">Contact</a></li>
+                        <li class="pr-5"><a class="hover:text-red-600" href="#">Legal</a></li>
+                    </ul>
                     <p id="hamburgerbtn" class="md:hidden">
                         <i class="text-white text-2xl fas fa-bars"></i>
                     </p>
                 </div>
-
-                <ul class="hidden md:flex md:flex-row text-white" id="mobileMenu">
-                    <li class="pr-5"><a class="hover:text-red-600" href="#">Contest</a></li>
-                    <li class="pr-5"><a class="hover:text-red-600" href="#">Product</a></li>
-                    <li class="pr-5"><a class="hover:text-red-600" href="#">Contact</a></li>
-                    <li class="pr-5"><a class="hover:text-red-600" href="#">Legal</a></li>
-                </ul>
             </nav>
         </div>
 
@@ -131,21 +129,22 @@
                     <div class="mt-2">
                         <div>
                             <label class="inline-flex items-center">
-                                <input name="formCheckBox" type="checkbox" class="form-checkbox" required>
+                                <input name="formCheckBox" type="checkbox" id="checkOne" required>
                                 <span class="ml-2">I agree to the <a href="#">rules and regulations.</a></span>
                             </label>
+                            <p class="text-red-600" id="text" style="display:none">Please check the box.</p>
                         </div>
                         <div>
                             <label class="inline-flex items-center">
-                                <input name="formCheckBox" id="checkBox" type="checkbox" class="form-checkbox" required>
+                                <input name="formCheckBox" type="checkbox" id="checkTwo" required>
                                 <span class="ml-2">I agree to the <a href="#">terms and conditions</a> and <a
                                         href="#">privacy policy.</a></span>
                             </label>
-                            <p id="checkBoxError"></p>
+                            <p class="text-red-600" id="textTwo" style="display:none">Please check the box.</p>
                         </div>
                         <div>
                             <label class="inline-flex items-center">
-                                <input name="formCheckBox" type="checkbox" class="form-checkbox">
+                                <input name="formCheckBox" type="checkbox">
                                 <span class="ml-2">I consent to receiving emails regarding our products,
                                     newsletter, and up-coming promotions.</span>
                             </label>
