@@ -23,6 +23,8 @@ function pop() {
 
 
 
+
+
 function hasCharsCheck(dataToCheck) {
     let pattern = /^[a-zA-Z]{2,60}$/;
     if (pattern.test(dataToCheck.field.value)) {
@@ -109,10 +111,12 @@ function formChecker(e) {
 
 
     if (errorsDetected > 0) {
+        
         console.log('fix your errors');
     } else {
         console.log('form submitted');
         topFunction();
+        document.getElementsByClassName('overlay')[0].style.opacity = '0.3';
         pop();
     }
 
