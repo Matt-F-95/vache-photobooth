@@ -8,6 +8,20 @@ hamburger.addEventListener('click', function () {
     mobileMenu.classList.toggle('active');
 });
 
+let modal = null
+
+function pop() {
+    if (modal === null) {
+        document.getElementById("box").style.display = "block";
+        modal = true
+    } else {
+        document.getElementById("box").style.display = "none";
+        modal = null
+    }
+}
+
+
+
 
 function hasCharsCheck(dataToCheck) {
     let pattern = /^[a-zA-Z]{2,60}$/;
@@ -90,13 +104,22 @@ function formChecker(e) {
         if (inputField.checker(inputField) == false) {
             inputField.error.innerText = inputField.msg;
             errorsDetected += 1;
-
         }
     });
 
+
     if (errorsDetected > 0) {
         console.log('fix your errors');
+        // pop();
+    } else {
+        console.log('form submitted');
+        
+        pop();
+        // document.getElementById("box").style.display = "block";
+
     }
+
+
 
 }
 
@@ -105,6 +128,8 @@ function formChecker(e) {
     let randblurbs = Math.floor(Math.random() * blurbs.length);
     document.getElementById('randomBlurbs').innerHTML = blurbs[randblurbs];
 })();
+
+
 
 
 
@@ -161,28 +186,28 @@ function inputChecker(e) {
     }
 
     if (birthdayInput.value <= "") {
-        errors = errors +1;
+        errors = errors + 1;
         birthdayInput.style.borderBottom = "1.5px solid red";
     } else {
         birthdayInput.style.borderBottom = "1.5px solid green";
     }
 
     if (parentFirstNameInput.value == "") {
-        errors = errors +1;
+        errors = errors + 1;
         parentFirstNameInput.style.borderBottom = "1.5px solid red";
     } else {
         parentFirstNameInput.style.borderBottom = "1.5px solid green";
     }
 
     if (parentLastNameInput.value == "") {
-        errors = errors +1;
+        errors = errors + 1;
         parentLastNameInput.style.borderBottom = "1.5px solid red";
     } else {
         parentLastNameInput.style.borderBottom = "1.5px solid green";
     }
 
     if (parentPhoneNumberInput.value == "") {
-        errors = errors +1;
+        errors = errors + 1;
         parentPhoneNumberInput.style.borderBottom = "1.5px solid red";
     } else {
         parentPhoneNumberInput.style.borderBottom = "1.5px solid green";
@@ -191,7 +216,7 @@ function inputChecker(e) {
     if (skillTestQuestionInput.value == 75) {
         skillTestQuestionInput.style.borderBottom = "1.5px solid green";
     } else {
-        errors = errors +1;
+        errors = errors + 1;
         skillTestQuestionInput.style.borderBottom = "1.5px solid red";
     }
 
